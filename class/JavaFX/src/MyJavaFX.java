@@ -1,13 +1,15 @@
-import javafx.applications.Applications;
-import javafx.scene.control.Button;
+import javafx.application.Application;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.control.Button;
 
-public class MyJava extends Applications {
 
-    @Override
+public class MyJavaFX extends Application {
+
+    //Override
     public void start(Stage primaryStage) throws Exception {
-        Button btOK = new Button(text "OK");
-        Scene scene = new Scene(btOK, width 200, height 250);
+        Button btOK = new Button("Ok");
+        Scene scene = new Scene(btOK, 200, 250);
         primaryStage.setScene(scene);
         primaryStage.setTitle("MyJavaFX");
         primaryStage.show();
